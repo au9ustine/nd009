@@ -4,21 +4,21 @@
 
 * pip + virtualenv
   ```
-  virtualenv --python=python2 env
-  source env/bin/activate
-  export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0rc2-py2-none-any.whl
-  pip install -U $TF_BINARY_URL
-  pip install -U 'ipython[notebook]'
-  pip install scikit-learn pyreadline Pillow matplotlib scipy
+  $ virtualenv --python=python2 env
+  $ source env/bin/activate
+  $ export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0rc2-py2-none-any.whl
+  $ pip install -U $TF_BINARY_URL
+  $ pip install -U 'ipython[notebook]'
+  $ pip install scikit-learn pyreadline Pillow matplotlib scipy
   ```
 
 * docker
   ```
-  docker pull gcr.io/tensorflow/tensorflow
-  git clone git@github.com:tensorflow/tensorflow.git
-  cp tensorflow/tensorflow/examples/udacity/*.ipynb ./
-  cp tensorflow/tensorflow/examples/udacity/Dockerfile ./
-  docker build -t nd009 .
+  $ docker pull gcr.io/tensorflow/tensorflow
+  $ git clone git@github.com:tensorflow/tensorflow.git
+  $ cp tensorflow/tensorflow/examples/udacity/*.ipynb ./
+  $ cp tensorflow/tensorflow/examples/udacity/Dockerfile ./
+  $ docker build -t nd009 .
   ```
 
 ## Get data
@@ -42,7 +42,7 @@ $ shasum notMNIST_small.tar.gz
 
 * docker
   ```
-  docker run -it --name tensorflow-udaicty --rm -p 8888:8888 -v `pwd`:/notebooks nd009
+  $ docker run -it --name tensorflow-udaicty --rm -p 8888:8888 -v `pwd`:/notebooks nd009
   ```
 
 ## References
