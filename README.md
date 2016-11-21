@@ -9,6 +9,7 @@
   export TF_BINARY_URL=https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.11.0rc2-py2-none-any.whl
   pip install -U $TF_BINARY_URL
   pip install -U 'ipython[notebook]'
+  pip install scikit-learn pyreadline Pillow matplotlib scipy
   ```
 
 * docker
@@ -31,9 +32,13 @@ $ wget -c http://commondatastorage.googleapis.com/books1000/notMNIST_small.tar.g
 $ shasum notMNIST_small.tar.gz
   23db76a71f83982f18a51b855b5746bd52e01f1c  notMNIST_small.tar.gz
 ```
-It would be better to extract to disk by manual, as the notebook would extract it by `tar` library in Python, which is bit of slow.
 
 ## Run
+
+* ipython notebook
+  ```
+  $ ipython notebook
+  ```
 
 * docker
   ```
