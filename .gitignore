@@ -95,3 +95,4 @@ ENV/
 tensorflow/*
 notMNIST_large/*
 notMNIST_small/*
+*.pickle
