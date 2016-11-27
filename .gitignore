@@ -96,3 +96,7 @@ tensorflow/*
 notMNIST_large/*
 notMNIST_small/*
 *.pickle
+*.zip
+!notMNIST_small/A/Q0NXaWxkV29yZHMtQm9sZEl0YWxpYy50dGY=.png
+!notMNIST_small/B/Q2FsaWd1bGEgUmVndWxhci50dGY=.png
+!notMNIST_small/C/QmVlc2tuZWVzQy5vdGY=.png
